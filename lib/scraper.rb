@@ -34,6 +34,7 @@ class Scraper
           student[:blog] = link
         end
       end
+        student[:quote] = doc.css("div .profile-quote")
         binding.pry
   end
 
