@@ -20,23 +20,21 @@ class Scraper
     student = {}
     new_doc = doc.css(".social-icon-container a")
     links = []
-    new_doc.each do |link|
-    links << link.attr("href")
-    end
-    links.each do |link|
-      if link.include?("twitter")
-        student[:twitter] = link
-      elsif link.include?('linkedin')
-        student[:linkedin] = link
-      elsif link.include?('github')
-       student[:github] = link
+      new_doc.each do |link|
+          links << link.attr("href")
+      end
+      links.each do |link|
+        if link.include?("twitter")
+          student[:twitter] = link
+        elsif link.include?('linkedin')
+          student[:linkedin] = link
+        elsif link.include?('github')
+          student[:github] = link
        binding.pry
       #elsif link.css(".social-icon").attr(src="../assets/img/rss-icon.png")
       #  student[:blog] = link
+        end
       end
-  end
-  #<a href="http://joemburgess.com/"><img class="social-icon" src="../assets/img/rss-icon.png
-    #{:twitter => , :linkedin => , :github =>, :blog => , :profile_quote =>, :bio => }
   end
 
 end
