@@ -37,8 +37,7 @@ class Scraper
         student[:quote] = doc.css("div .profile-quote").text
         student[:bio] = doc.css()
         binding.pry
-        #<div class="bio-content content-holder">
-            
+        #<div class="bio-content content-holder">        
   end
 
 end
