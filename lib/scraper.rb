@@ -34,8 +34,8 @@ class Scraper
           student[:blog] = link
         end
       end
-        student[:quote] = doc.css("div .profile-quote").text
-        student[:bio] = doc.css(".bio-content p")
+        student[:profile_quote] = doc.css("div .profile-quote").text
+        student[:bio] = doc.css(".bio-content p").text
         student
       end
 
