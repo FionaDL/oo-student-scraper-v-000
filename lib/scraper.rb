@@ -30,6 +30,8 @@ class Scraper
           student[:linkedin] = link
         elsif link.include?('github')
           student[:github] = link
+        else
+          student[:blog] = link
         end
       end
         binding.pry
