@@ -30,11 +30,11 @@ class Scraper
           student[:linkedin] = link
         elsif link.include?('github')
           student[:github] = link
-       binding.pry
-      #elsif link.css(".social-icon").attr(src="../assets/img/rss-icon.png")
-      #  student[:blog] = link
         end
       end
+        binding.pry
+      #elsif link.css(".social-icon").attr(src="../assets/img/rss-icon.png")
+      #  student[:blog] = link
   end
 
 end
