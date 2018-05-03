@@ -34,6 +34,7 @@ class Scraper
           student[:blog] = link
         end
       end
+        
         binding.pry
       #elsif link.css(".social-icon").attr(src="../assets/img/rss-icon.png")
       #  student[:blog] = link
